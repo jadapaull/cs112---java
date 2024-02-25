@@ -1,0 +1,13 @@
+Why are class Integer and class MyInt different ??
+ In the FunWithInteger() the Integer x value starts at one then does not double because it isn't assigned to x 
+ or why so it stays at one and a is 1 and 1. 
+ Then for B y gis the value that actually gets doubled so it is 1:2 . 
+ Then for c y is still at 2 so when it doubles it goes to 4 with is why it is 4:2. 
+ For d x is at 4 and gets doubled which makes it 8,2.
+
+ In the FunWithMyInt() x actually gets doubles at first with the x.DoubleMe() and for E it prints out 2,1.
+ Then for F x if equal to the doubling of y which makes it 4,4  
+ For G we are  y is equal to x so it starts as 4 and doubles to 8, which then changes the x value as well. 
+ For H only x is doubles and changed because that is the only variable we are working with . 
+ Then finally for I y gets doubles and then the other value of x stayes the same because we did not assign it 
+ to anything so it just goes straight to the doubleme(). 
