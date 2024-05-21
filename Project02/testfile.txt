@@ -1,0 +1,23 @@
+create
+create file.txt
+Hello this is jada
+cat file.txt
+mkdir bingo
+rmdir bingo
+cd /
+mkdir Jada 
+mkdir nolan
+Jada
+exit
+
+rmdir
+mkdir
+mkdir bingo
+Jada
+cd /
+ls
+du
+pwd
+find
+find file.txt
+exit

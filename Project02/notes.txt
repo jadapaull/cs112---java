@@ -1,0 +1,47 @@
+Part 1
+For program part one I tested by making a file of several differnt commands and then using the
+javac FileSys.java and then the java FileSys < testfile.txt to input my test file into the FileSys file .
+I wrote correct and incorrect program actions in it so that they would give me differnt results . I also tested different "bogus" actions to see if they would run. 
+Some of the test cases and their responses will be listed below:
+"create" - Please enter valid name - because there was no file name
+"create file.txt" -Success 
+"cat"-Please enter valid name - because there was no file name 
+"pwd" - Success
+"rmdir" -Please enter valid name - because there is no directory name to remove
+"mkdir"- Please enter valid name - because there is no directory name to make
+"find file.txt" - Success 
+"Jada"- CMD IS not valid - not a command
+"exit" - Goodbye - self explanitory
+There are others in my testfile.txt if you would like to look at more that i did 
+Also I was not sure if the exit command was supposed to exit the program on part one but that is what it does
+
+Part 2
+For part 2 of project one I tested different [arts by different strategies. 
+For all of the different directory changes.When ls was made then I would make a new directory , and try to cd into it. Then I would type ls to see if I was in the new directory > I also used pwd after I got it working to really test and see what would work . Here is basically a copy and paste from my command line of what happened.
+jadastestcommandline - % mkdir newdir
+jadastestcommandline - % ls
+newdir (*)     
+jadastestcommandline - % mkdir newdir.ps3
+jadastestcommandline - % ls
+newdir (*)     newdir.ps3 (*)     
+jadastestcommandline - % cd newdir
+jadastestcommandline - % mkdir findme.txt
+jadastestcommandline - % cd /
+
+Also to test the file contents was saving the way it should I did do a lot of System.out.println to see what exactly was happening in the code.
+I also used this method in other parts of the code. Pretty much in all of it just to see what was going on.
+The test case file does not really work it follows the commands but the spacing ends up a little weird , it works better when someone is actually typing into the command line it has better spacing .
+jadastestcommandline - % mkdir directorya directoryb
+jadastestcommandline - % ls
+directorya directoryb (*)   
+This is how the pwd works . It was a lot of trial and error running it and having multiple print statements.
+jadastestcommandline - % cd /
+jadastestcommandline - % mkdir level1
+jadastestcommandline - % cd level1
+jadastestcommandline - % mkdir level2
+jadastestcommandline - % cd level2
+jadastestcommandline - % mkdir level3
+jadastestcommandline - % cd level3
+jadastestcommandline - % pwd
+/level1/level2/level3
+jadastestcommandline - %   

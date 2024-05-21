@@ -1,3 +1,6 @@
+import java.util.InputMismatchException;
+
+
 /** class SimpleFloat
  *
  * class SimpleFloat explores a few of the complexities involved in
@@ -147,43 +150,45 @@ class SimpleFloat {
 	 * @param x the SimpleFloat that is added to this SimpleFloat
 	 * @return SimpleFloat whose value = value of 'this' + value of 'x'	 */
 	 public SimpleFloat addTo(SimpleFloat x) {
+		
+		System.out.println(x.exponent);
         return x;
-		// FILL IN HERE
 	}
 	
-	/** toString()
-	 * Student should supply code to match the specification in the lab doc.
-	 *
-	 * @return String representation of this SimpleFloat, per lab spec
-	 */
-	public String toString() {
-        return null;
-		// FILL IN HERE
+	public static String toString(SimpleFloat x) {
+		String fullString = (x.mantissa + " x pow(2," + x.exponent + ")");
+        return fullString;
 	}
 
-	/** value()
-	 * Student should supply code to match the specification in the lab doc.
-	 *
-	 * @return double value of this SimpleFloat
-	 */
-	public double value() {
-        return exponent;
-		// FILL IN HERE
+
+	public static double value (SimpleFloat one, SimpleFloat two, SimpleFloat three){
+		
+		double finalResult = one.mantissa * Math.pow(2, one.exponent);
+		finalResult += two.mantissa * Math.pow(2, two.exponent);
+		finalResult += three.mantissa * Math.pow(2, three.exponent);
+		
+		return finalResult;
 	}
 
 } // end class SimpleFloat
 
 
-/** class SimpleFloatNum
- *
- * Tester class for SimpleFloat
- */
-class SimpleFloatNum {
-	static public void main(String[] args) {
-        String arg1 = args[0];
-        String arg2 = args[1];
-        String args3 = args[2];
+public class SimpleFloatNum {
+	public static void main(String[] args) {
+        String args1 =  args[0];//Reading argument
+		Double args1double = Double.parseDouble(args1); //Double Transformation
+		SimpleFloat argone = new SimpleFloat(args1double); // Making a Simple Float 
+		String args2 =  args[1];//Reading argument
+		Double args2double = Double.parseDouble(args2); //Double Transformation
+		SimpleFloat argtwo = new SimpleFloat(args2double); // Making a Simple Float 
+        String args3 = args[2];//Reading argument
+		Double args3double = Double.parseDouble(args3); //Double Transformation
+		SimpleFloat argthree = new SimpleFloat(args3double); // Making a Simple Float 
+	
+		System.out.println(SimpleFloat.toString(argone));
+		System.out.println(SimpleFloat.value(argone, argtwo, argthree));
+
+		System.err.println("Error!");
         
-		// FILL IN HERE
 	}
 }

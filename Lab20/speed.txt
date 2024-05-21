@@ -1,0 +1,2 @@
+Java Speed or Bubble.java  = 0.078000
+Python Speed of Bubble.py = 4.5715179443359375
